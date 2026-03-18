@@ -16,6 +16,7 @@ public class Main {
         bookShelf.appendBook(new Book("로마인 이야기", "역사", 1992, 25000));
         bookShelf.appendBook(new Book("어린왕자", "소설", 1943, 9000));
 
+        System.out.println("20240718 백다현");
         //장르 필터 iterator를 사용하여 소설 장르의 책들만 출력
         System.out.println("=== [소설] 장르의 책들 ===");
         Iterator<Book> genreIterator = bookShelf.iteratorByGenre("소설");

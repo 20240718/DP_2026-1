@@ -17,7 +17,7 @@ public class YearReverseIterator implements Iterator<Book> {
         }
         // 출판연도를 기준으로 내림차순 정렬
         sortedbooks.sort((b1, b2) -> Integer.compare(b2.getYear(), b1.getYear()));
-        this.index = sortedbooks.size() - 1; //정렬된 리스트의 마지막 요소부터 시작
+        this.index = 0;
     }
 
     @Override
@@ -31,8 +31,7 @@ public class YearReverseIterator implements Iterator<Book> {
             throw new NoSuchElementException(); //더 이상 책이 없으면 예외를 던짐
         }
         Book book = sortedbooks.get(index); //현재 index에 있는 책을 꺼냄
-        index--; //index를 감소시켜 다음 책으로 이동
+        index++; //index를 감소시켜 다음 책으로 이동
         return book;
     }
-
 }
