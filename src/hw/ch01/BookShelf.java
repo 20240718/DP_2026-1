@@ -23,6 +23,7 @@ public class BookShelf implements Iterable<Book> {
         return last;
     }
 
+    //Iterator를 반환하는 메서드 추가
     public Iterator<Book> iteratorByGenre(String genre) {
         return new GenreFilterIterator(this, genre);
     }

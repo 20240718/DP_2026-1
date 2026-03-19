@@ -3,7 +3,7 @@ package hw.ch01;
 public class Book {
     private String name;
     private String genre; //장르
-    private int year; //출판년도
+    private int year; //출판연도
     private double price; //가격
     
     public Book(String name) { //기존 생성자 그대로
@@ -20,7 +20,7 @@ public class Book {
     public String getName() {
         return name;
     }
-    
+
  //getter 메서드도 추가
     public String getGenre() {
         return genre;
