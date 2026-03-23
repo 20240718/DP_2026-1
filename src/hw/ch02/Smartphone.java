@@ -3,8 +3,8 @@ package hw.ch02;
 public class Smartphone {
   private Charger charger;
 
-  public Smartphone(KoreanOutletAdapter adapter) {
-    this.charger = (Charger) adapter;
+  public Smartphone(Charger charger) {
+    this.charger = charger;
   }
 
   public void charge() {
