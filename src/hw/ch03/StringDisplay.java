@@ -1,0 +1,39 @@
+package hw.ch03;
+
+public class StringDisplay extends AbstractDisplay {
+    private String string; 
+    private int width;    
+
+    public StringDisplay(String string) {
+        this.string = string;
+        this.width = string.length();
+    }
+    public StringDisplay(String string, int repeatCount) {
+        super(repeatCount); //반복 횟수 설정하는 생성자 호출
+        this.string = string;
+        this.width = string.length();
+    }
+
+    @Override
+    public void open() {
+        printLine();
+    }
+
+    @Override
+    public void print() {
+        System.out.println("|" + string + "|");
+    }
+
+    @Override
+    public void close() {
+        printLine();
+    }
+
+    private void printLine() {
+        System.out.print("+");
+        for (int i = 0; i < width; i++) {
+            System.out.print("-");
+        }
+        System.out.println("+");
+    }
+}

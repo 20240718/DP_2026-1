@@ -1,7 +1,7 @@
-package ch04.Sample.framework;
+package ch04.Sample.framework; //2개의 클래스로 실행됨
 
 public abstract class Factory {
-    public final Product create(String owner) {
+    public final practice.ch04.framework.Product create(String owner) {
         Product p = createProduct(owner);
         registerProduct(p);
         return p;
