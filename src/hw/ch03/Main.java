@@ -9,7 +9,7 @@ public class Main {
         d2.display();
 
         //[3-2] Step 1 테스트: 반복 횟수 제어
-        AbstractDisplay d3 = new CharDisplay('A', 3); // 'A'를 3회 반복
+        AbstractDisplay d3 = new CharDisplay('X', 3); // 'X'를 3회 반복
         AbstractDisplay d4 = new StringDisplay("Test", 7);
         d3.display();
         d4.display();

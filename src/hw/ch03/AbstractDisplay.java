@@ -8,7 +8,7 @@ public abstract class AbstractDisplay {
     public AbstractDisplay() {
         this.repeatCount = 5; //기본값 5로 초기화
     }
-    public AbstractDisplay(int repeatCount) {
+    public AbstractDisplay(int repeatCount) { 
         this.repeatCount = repeatCount;
     }
 
