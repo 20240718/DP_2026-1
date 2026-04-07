@@ -3,10 +3,11 @@ package hw.ch04;
 import hw.ch04.framework.Factory;
 import hw.ch04.framework.Product;
 import hw.ch04.idcard.IDCardFactory;
-import hw.ch04.license.*;
+import hw.ch04.license.LicenseCardFactory;
 
 public class Main {
     public static void main(String[] args) {
+        System.out.println("20240718 백다현");
         //IDCard 정보 확장
         Factory factory1 = new IDCardFactory("2026-01-15");
         Product card1 = factory1.create("Youngjin Kim");

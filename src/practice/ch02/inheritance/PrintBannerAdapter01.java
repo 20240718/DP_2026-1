@@ -8,7 +8,7 @@ public class PrintBannerAdapter01 extends Banner implements Print { //타켓인�
     }
 
     public PrintBannerAdapter01(Object string) {
-      //TODO Auto-generated constructor stub
+        super(string.toString());
     }
 
     @Override
