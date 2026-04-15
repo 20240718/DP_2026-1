@@ -6,7 +6,7 @@ class Main {
     public static void main(String[] args) {
         List<String> list = Arrays.asList("D", "B", "C", "E", "A");
 
-        // 사전순으로 작은 순서
+        // 사전순으로 작은 순서(오름차순)
         list.sort(new Comparator<String>() {
             public int compare(String a, String b) {
                 return a.compareTo(b);

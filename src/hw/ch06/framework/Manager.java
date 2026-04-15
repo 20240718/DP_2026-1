@@ -1,4 +1,4 @@
-package ch06.Sample.framework;
+package hw.ch06.framework;
 
 import java.util.HashMap;
 import java.util.Map;
