@@ -16,7 +16,7 @@ public class BookShelf implements Iterable<Book> {
     }
 
     public void appendBook(Book book) {
-        books.add(book);
+        books.add(book); //books[last] = book; -> books.add(book);로 변경 -> 크기 제한 없이 책 추가 가능
     }
 
     public int getLength() {

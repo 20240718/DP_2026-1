@@ -11,8 +11,8 @@ public class Main {
         bookShelf.appendBook(new Book("Daddy-Long-Legs"));
 
         // 명시적으로 Iterator를 사용하는 방법 
-        Iterator<Book> it = bookShelf.iterator();
-        while (it.hasNext()) {
+        Iterator<Book> it = bookShelf.iterator(); //iterator에게 책꽂이 전달
+        while (it.hasNext()) { 
             Book book = it.next();
             System.out.println(book.getName());
         }

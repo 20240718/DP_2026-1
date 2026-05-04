@@ -7,12 +7,20 @@ public class Main {
         Directory bindir = new Directory("bin");
         Directory tmpdir = new Directory("tmp");
         Directory usrdir = new Directory("usr");
+        Directory csh = new Directory("csh");
+
         rootdir.add(bindir);
         rootdir.add(tmpdir);
         rootdir.add(usrdir);
+        rootdir.add(csh);
+
+        csh.add(new File("csh1", 100));
+        csh.add(new File("csh2", 200));
+        csh.add(new File("csh3", 300));
+
         bindir.add(new File("vi", 10000));
         bindir.add(new File("latex", 20000));
-        rootdir.printList();
+        rootdir.printList(); //루트한테 밑의 디랙토리를 모두 출력하라
         System.out.println();
 
         System.out.println("Making user entries...");

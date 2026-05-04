@@ -6,7 +6,7 @@ import ch06.Sample.framework.Product;
 public class Main {
     public static void main(String[] args) {
         // 준비 
-        Manager manager = new Manager();
+        Manager manager = new Manager(); //Manager 클래스의 인스턴스 생성
         UnderlinePen upen = new UnderlinePen('-');
         MessageBox mbox = new MessageBox('*');
         MessageBox sbox = new MessageBox('/');
@@ -18,7 +18,7 @@ public class Main {
 
         // 생성과 사용 
         Product p1 = manager.create("strong message");
-        p1.use("Hello, world.");
+        p1.use("Hello, world."); //제품에 이름을 붙임
 
         Product p2 = manager.create("warning box");
         p2.use("Hello, world.");

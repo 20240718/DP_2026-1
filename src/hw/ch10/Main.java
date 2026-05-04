@@ -2,7 +2,7 @@ package hw.ch10;
 
 public class Main {
     public static void main(String[] args) {
-        
+        System.out.println("20240718 백다현");
         System.out.println("===== RandomStrategy =====");
         Player player1 = new Player("Taro", new ProbStrategy(0));
         System.out.println("\n===== CyclicStrategy =====");
