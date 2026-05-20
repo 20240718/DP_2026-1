@@ -15,7 +15,7 @@ public class LoginFrame extends Frame implements ActionListener, Mediator {
     private ColleagueTextField textPass;
     private ColleagueButton buttonOk;
     private ColleagueButton buttonCancel;
-    private ColleagueLabel label;
+    private ColleagueLabel label; // Label도 Colleague로 만든다
 
     // Colleague를 생성하고 배치한 후에 표시한다
     public LoginFrame(String title) {
@@ -64,7 +64,7 @@ public class LoginFrame extends Frame implements ActionListener, Mediator {
         buttonCancel = new ColleagueButton("Cancel");
 
         // Label
-        label = new ColleagueLabel("로그인 불가");
+        label = new ColleagueLabel("● 로그인 불가");
 
         // Mediator를 설정한다 
         checkGuest.setMediator(this);
