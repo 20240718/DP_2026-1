@@ -1,4 +1,4 @@
-package ch17.Sample;
+package practice.ch17;
 
 public class Main {
     public static void main(String[] args) {

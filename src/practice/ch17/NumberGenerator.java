@@ -1,14 +1,16 @@
-package ch17.Sample;
+package practice.ch17;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public abstract class NumberGenerator {
+    // Observer: 부모 타입-> 모든 종류의 관찰자들을 저장ㅇ가능
+    // 관찰 대상은 구체적으로 어떤 관찰자가 자신을 관찰하는지 모른다. 알필요없다 -> 느슨한 결합
     // Observer를 저장한다  
     private List<Observer> observers = new ArrayList<>();
 
     // Observer를 추가한다 
-    public void addObserver(Observer observer) {
+    public void addObserver(Observer observer) { //인자로 들어온 옵저버 추가
         observers.add(observer);
     }
 
@@ -20,7 +22,7 @@ public abstract class NumberGenerator {
     // Observer에 통지한다 
     public void notifyObservers() {
         for (Observer o: observers) {
-            o.update(this);
+            o.update(this); //통지함
         }
     }
 

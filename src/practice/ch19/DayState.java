@@ -1,4 +1,4 @@
-package ch19.A1;
+package practice.ch19;
 
 public class DayState implements State {
     private static DayState singleton = new DayState();
@@ -11,29 +11,29 @@ public class DayState implements State {
     }
 
     @Override
-    public void doClock(Context context, int hour) {
-        if (hour < 8 || 17 <= hour) {
+    public void doClock(Context context, int hour) { //야간 시간이 되면 야간 상태로 전환
+        if (hour < 9 || 17 <= hour) {
             context.changeState(NightState.getInstance());
         }
     }
 
     @Override
     public void doUse(Context context) {
-        context.recordLog("金庫使用(昼間)");
+        context.recordLog("금고사용(주간)"); //기록만
     }
 
     @Override
     public void doAlarm(Context context) {
-        context.callSecurityCenter("非常ベル(昼間)");
+        context.callSecurityCenter("비상벨(주간)"); //경비 센터에 연락함
     }
 
     @Override
     public void doPhone(Context context) {
-        context.callSecurityCenter("通常の通話(昼間)");
+        context.callSecurityCenter("일반 통화(주간)"); //경비 센터와 연락함
     }
 
     @Override
     public String toString() {
-        return "[昼間]";
+        return "[주간]";
     }
 }
