@@ -6,8 +6,8 @@ public class BigString {
 
     // 생성자 
     public BigString(String string) {
-        BigCharFactory factory = BigCharFactory.getInstance();
-        bigchars = new BigChar[string.length()];
+        BigCharFactory factory = BigCharFactory.getInstance(); //공장 생성
+        bigchars = new BigChar[string.length()]; //배열 생성
         for (int i = 0; i < bigchars.length; i++) {
             bigchars[i] = factory.getBigChar(string.charAt(i));
         }

@@ -3,7 +3,7 @@ package hw.ch17;
 public class RangeObserver implements Observer {
     @Override
     public void update(NumberGenerator generator) {
-        int number = generator.getNumber();
+        int number = generator.getNumber(); // 현재 생성된 수
         String range;
 
         // number의 범위를 판정한다
