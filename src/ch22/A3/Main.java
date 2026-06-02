@@ -19,7 +19,7 @@ public class Main extends JFrame {
     public Main(String title) {
         super(title);
 
-        this.addWindowListener(new WindowAdapter() {
+        this.addWindowListener(new WindowAdapter() { 
             public void windowClosing(WindowEvent e) {
                 System.exit(0);
             }

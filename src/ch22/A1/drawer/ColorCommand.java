@@ -20,4 +20,5 @@ public class ColorCommand implements Command {
     public void execute() {
         drawable.setColor(color);
     }
+
 }
